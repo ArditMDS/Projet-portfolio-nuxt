@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.pointActive::after {
+    content:" ";
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    background-color: teal;
+    border-radius: 50%;
+    position:relative;
+    top: 80px;
+    left: -50%;
+    opacity: 0;
+    transition: ease-out 0.3s;
+}
+
+.pointActive:hover::after {
+    top: 40px;
+    opacity: 1;
+}
+.pointActive {
+    position: absolute;
+    transition: ease-out 0.3s;
+}
+.pointActive:hover {
+    color: teal;
+}
+.partieGaucheNav {
+    display: flex;
+    gap: 100%;
+}
