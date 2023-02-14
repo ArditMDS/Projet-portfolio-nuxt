@@ -1,20 +1,28 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
-
+nav {
+    margin-bottom: 200px;
+}
+.colorBackground {
+    background-color:rgb(246, 71, 64);
+    border-radius: 0 0 50px 50px;
+}
 .pointActive::after {
     content:" ";
     display: inline-block;
     height: 10px;
     width: 10px;
-    background-color: teal;
+    background-color: rgb(249, 231, 132);
     border-radius: 50%;
     position:relative;
     top: 80px;
     left: -50%;
     opacity: 0;
+    transition: ease-out 0.3s;
+}
+.boutonCta {
+    background-color: rgb(249, 231, 132);
+    color: rgb(100, 69, 54);
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
     transition: ease-out 0.3s;
 }
 
@@ -27,9 +35,180 @@
     transition: ease-out 0.3s;
 }
 .pointActive:hover {
-    color: teal;
+    color: rgb(249, 231, 132);
+}
+.boutonCta:hover {
+    scale: 0.9;
+    color: rgb(100, 69, 54);
 }
 .partieGaucheNav {
     display: flex;
     gap: 100%;
+}
+.containerHeaderHomepage {
+    display: flex;
+    justify-content: space-evenly;
+}
+.containerGaucheHeaderHP {
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    width: 30%;
+}
+.imageHeader {
+    border-radius: 100vh;
+}
+.headerHP {
+    font-size: 10vh;
+}
+.containerDroitHP {
+    position: relative;
+}
+.popUpImage {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: larger;
+    border-radius: 10px;
+    top: 50%;
+    left: -2vw;
+    position: absolute;
+}
+.containerProjets {
+    margin-top: 5vh;
+}
+.containerSkills {
+    display: flex;
+    width: 100%;
+    gap: 10%;
+    flex-wrap: wrap;
+}
+.skill {
+    background-color: rgb(249, 231, 132);
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: rgb(100, 69, 54);
+}
+.titreProjet {
+    font-size: 5vh;
+    margin-bottom: 5vh;
+}
+.containerTitre {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10vw 0 10vw;
+}
+.containerCarreProjet {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+.carreProjet {
+    height: 30vh;
+    width: calc(100vw/4);
+    position: relative;
+}
+.imageProjet {
+    position: absolute;
+    height: 98%;
+    width: 98%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    object-fit: cover;
+    transition: all ease-out 0.3s;
+}
+.imageProjet:hover {
+    transform: translate(-50%, -50%) scale(0.9);
+
+}
+.petitCarreNumero {
+    background-color: black;
+    color: white;
+    font-size:x-large;
+    padding: 20px 30px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -10%;
+    right: -5%;
+}
+.titreCarre {
+    position: absolute;
+    bottom: -15%;
+    left: 0;
+}
+.alignementVertical {
+    height: 50vh;
+}
+.containerCarre1 {
+    display: flex;
+    align-items: flex-start;
+}
+.containerCarre2 {
+    display: flex;
+    align-items: center;
+}
+.containerCarre3 {
+    display: flex;
+    align-items: flex-end;   
+}
+.carreProjet {
+    position: relative;
+    --border-size: 3px;
+    --border-angle: 0turn;
+    width: calc(100vw/4);
+    height: 30vh;
+    background-image: conic-gradient(
+        from var(--border-angle),
+        #213,
+        #112 50%,
+        #213
+      ),
+      conic-gradient(
+        from var(--border-angle),
+        transparent 20%,
+        #2d00f7,
+        #c200fb,
+        #ec7d10,
+        #30f2f2,
+        #7cb518
+      );
+    background-size: calc(100% - (var(--border-size) * 2))
+        calc(100% - (var(--border-size) * 2)),
+      cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  
+    animation: bg-spin 3s linear infinite;
+    @keyframes bg-spin {
+      to {
+        --border-angle: 1turn;
+      }
+    }
+  
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+  
+  @property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+  }
+.lienTous {
+    display: flex;
+    align-items: center;
+    border: 2px dashed black;
+    padding: 0 5vw 0 5vw;
+    transition: ease-out 0.3s;
+}
+
+.lienTous:hover {
+    border: 2px solid black;
+    scale: 1.05;
+    box-shadow: 10px 13px 18px -1px rgba(0,0,0,0.39);
+
 }
