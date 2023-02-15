@@ -21,8 +21,9 @@
             </div>
             <div class="alignementVertical containerCarre3">
                 <div class="carreProjet">
+                    <img class="imageProjet" src="../assets/image/ordis.jpg" alt="">
                     <span class="petitCarreNumero">3</span>
-                    <p class="titreCarre">Site 3</p>
+                    <p class="titreCarre">Hardware: montage de ce setup</p>
                 </div>
             </div>
         </div>
