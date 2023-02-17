@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@fortawesome/vue-fontawesome": "^3.0.3",
+    "flickity": "^3.0.0",
     "flowbite": "^1.6.3"
   }
 }
