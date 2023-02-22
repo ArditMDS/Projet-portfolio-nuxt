@@ -353,87 +353,51 @@ table {
     background-color: #7f5539;
 }
 /*Projets*/
-.tousLesProjets {
+.containerProjet {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 100%;
+    background-color: rgb(249, 231, 132);
+    margin-bottom: 5%;
+    padding: 2%;
+    color: white;
+    
+}
+.titreCategorie {
+    font-family: Amatic SC,cursive;
+    font-size: 80px;
+}
+.projet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #7f5539;
+    border: 10px double #f9e784;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 30px;
+}
+.displayProjet {
+    display: flex;
+    gap: 5%;
+}
+.containerPageProjets {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 5%;
 }
-.containerCategorie {
-    width: 90%;
-}
-li {
-    list-style-type: none;
-}
-.titreCategorie {
-    font-size: 80px;
-    font-family: 'Amatic SC', cursive;
-}
-.boxCategorie {
-    padding: 30px;
-    background-color: rgb(249,231,132);
-    border-radius: 20px;
-    background: #f9e784;
-}
-.listeProjets {
-    border: 10px double rgb(249, 231, 132);
-    margin-bottom: 20px;
-    padding: 30px;
-    background-color: #7f5539;
-    border-radius: 20px;
-}
-.catNomProjet {
-    color: white;
-    text-align: center;
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-.imageProjets {
-    width: 47.5%;
-}
-.containerImageDesc {
-    display: flex;
-    align-items: center;
-    gap: 5%;
-}
-.texteDescription {
-    color: white;
+.imgProjet {
     width: 50%;
 }
-.carousel {
+.titreProjets {
+    font-size: 150%;
+}
+.description {
     display: flex;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    max-width: 100%;
-}
-.slide {
-    flex-shrink: 0;
-    scroll-snap-align: start;
-    margin-right: 20px;
-    height: 200%;
-}
-/* external css: flickity.css */
-
-* { box-sizing: border-box; }
-
-body { font-family: sans-serif; }
-
-.carousel {
-  background: #EEE;
-}
-
-.carousel-cell {
-  margin-right: 20px;
-  overflow: hidden;
-}
-
-.carousel-cell img {
-  display: block;
-  height: 200px;
-}
-
-@media screen and ( min-width: 768px ) {
-  .carousel-cell img {
-    height: 400px;
-  }
+    align-items: center;
+    width: 50%;
 }
