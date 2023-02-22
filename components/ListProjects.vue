@@ -1,5 +1,6 @@
 <template>
     <div>
+        <p>yo</p>
       <div class="tousLesProjets">
         <li class="containerCategorie" v-for="categorie in categorieProjets">
           <h2 class="titreCategorie">{{ categorie.nomCategorie }}</h2>
