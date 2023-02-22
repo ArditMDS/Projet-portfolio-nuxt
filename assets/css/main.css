@@ -398,6 +398,7 @@ li {
 }
 .texteDescription {
     color: white;
+    width: 50%;
 }
 .carousel {
     display: flex;
@@ -410,7 +411,6 @@ li {
     scroll-snap-align: start;
     margin-right: 20px;
     height: 200%;
-    width: 200%;
 }
 /* external css: flickity.css */
 
