@@ -1,45 +1,35 @@
 <template>
-        <div>
-        <div class="tousLesProjets">
-            <li class="containerCategorie" v-for="categorie in categorieProjets">
-                <h2 class="titreCategorie">{{ categorie.nomCategorie }}</h2>
-                <div class="boxCategorie">
-                    <div class="boxProjets">
-                        <li class="listeProjets" v-for="projet in projets.filter(item => categorie.nomCategorie === item.categorieProjet)">
-                            <h2 class="catNomProjet">{{ projet.nomProjet }}</h2>
-                            <div class="containerImageDesc">
-                                <v-carousel>
-                                <div v-if="projet.showVideo">
-                                    <v-carousel-item>
-                                        <video :src="projet.urlVideo" controls></video>
-                                    </v-carousel-item>
-                                </div>
-                                <v-carousel-item
-                                :src="projet.urlImage"                                    
-                                    contain
-                                ></v-carousel-item>
-
-                                <v-carousel-item
-                                :src="projet.urlImage2"                                    
-                                    contain
-                                ></v-carousel-item>
-
-                                <v-carousel-item
-                                :src="projet.urlImage3"                                    
-                                    contain
-                                ></v-carousel-item>
-                                </v-carousel>
-                                <p class="texteDescription">
-                                    {{ projet.texte }}
-                                </p>
-                            </div>
-                        </li>
+    <div>
+      <div class="tousLesProjets">
+        <li class="containerCategorie" v-for="categorie in categorieProjets">
+          <h2 class="titreCategorie">{{ categorie.nomCategorie }}</h2>
+          <div class="boxCategorie">
+            <div class="boxProjets">
+              <li class="listeProjets" v-for="projet in projets.filter(item => categorie.nomCategorie === item.categorieProjet)">
+                <h2 class="catNomProjet">{{ projet.nomProjet }}</h2>
+                <div class="containerImageDesc">
+                  <v-carousel>
+                    <div v-if="projet.showVideo">
+                      <v-carousel-item>
+                        <video :src="projet.urlVideo" controls></video>
+                      </v-carousel-item>
                     </div>
+                    <v-carousel-item :src="projet.urlImage" contain></v-carousel-item>
+                    <v-carousel-item :src="projet.urlImage2" contain></v-carousel-item>
+                    <v-carousel-item :src="projet.urlImage3" contain></v-carousel-item>
+                  </v-carousel>
+                  <p class="texteDescription">
+                    {{ projet.texte }}
+                  </p>
                 </div>
-            </li>
-        </div>
+              </li>
+            </div>
+          </div>
+        </li>
+      </div>
     </div>
-</template>
+  </template>
+  
 
 <script>
 export default {
