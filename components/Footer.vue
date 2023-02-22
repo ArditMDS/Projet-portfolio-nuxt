@@ -3,16 +3,16 @@
         <div class="containerFooter">
             <div class="containerFooterGauche">
                 <NuxtLink to="/">                    
-                    <p class="footerNav">Homepage</p>
+                    <p class="footerNav">Accueil</p>
                 </NuxtLink>
                 <NuxtLink to="/about">                    
-                    <p class="footerNav">About</p>
+                    <p class="footerNav">À propos</p>
                 </NuxtLink>
                 <NuxtLink to="/contact">                    
                     <p class="footerNav">Contact</p>
                 </NuxtLink>
                 <NuxtLink to="/projects">                    
-                    <p class="footerNav">Projects</p>
+                    <p class="footerNav">Mes projets</p>
                 </NuxtLink>
             </div>
             <div class="containerFooterDroit">

@@ -2,7 +2,7 @@
     <div class="containerHeaderHomepage">
         <div class="containerGaucheHeaderHP">
             <h1 class="headerHP">Je m'appelle <strong>Ardit Mataj</strong></h1>
-            <p>Je suis étudiant en développement Web à MyDigitalSchool Annecy. Je cherche une alternance en dev</p>
+            <p>Je suis étudiant en développement Web à MyDigitalSchool Annecy. Je cherche une alternance en développement web (sur tous les domaines ce qui ce trouve si dessous)</p>
             <div class="containerSkills">
                 <div class="skill">Html / Css</div>
                 <div class="skill">VueJS</div>
