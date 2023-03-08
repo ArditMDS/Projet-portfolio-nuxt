@@ -37,7 +37,7 @@
                                 qui étaient trop mal rangé.
                                 </v-card-text>
                                 <v-card-actions>
-                                <v-btn color="primary" block @click="dialog = false">Close Dialog</v-btn>
+                                <v-btn color="primary" block @click="dialog = false">Fermer</v-btn>
                                 </v-card-actions>
                             </v-card>
                         </v-dialog>
@@ -74,7 +74,7 @@
 
                                 </v-card-text>
                                 <v-card-actions>
-                                <v-btn color="primary" block @click="dialog3 = false">Close Dialog</v-btn>
+                                <v-btn color="primary" block @click="dialog3 = false">Fermer</v-btn>
                                 </v-card-actions>
                             </v-card>
                         </v-dialog>
@@ -108,7 +108,7 @@
                                     professionelle et que les gens avec qui je travaillais était vraiment bienveillant.
                                 </v-card-text>
                                 <v-card-actions>
-                                <v-btn color="primary" block @click="dialog2 = false">Close Dialog</v-btn>
+                                <v-btn color="primary" block @click="dialog2 = false">Fermer</v-btn>
                                 </v-card-actions>
                             </v-card>
                         </v-dialog>
@@ -134,6 +134,6 @@ export default {
 
 <style>
 .bg-primary {
-    background: red!important;
+    background: brown!important;
 }
 </style>

@@ -396,6 +396,9 @@ table {
     align-items: center;
     padding: 5%;
 }
+.containerPageProjetsMobile {
+    display: none;
+}
 .imgProjet {
     width: 50%;
 }
@@ -651,9 +654,6 @@ table {
   .displayProjet {
     flex-direction: column;
   }
-  .v-window{
-    height: 100% !important;
-  }
   .description {
     width: 100%;
   }
@@ -691,5 +691,18 @@ table {
     text-align: left;
     display: block;
     margin-bottom: 5px;
+  }
+  .containerPageProjets {
+    display: none;
+  }
+  .containerPageProjetsMobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .v-window {
+    height: 100% !important;
+  }
+  .projet {
+    padding: 10px;
   }
 }

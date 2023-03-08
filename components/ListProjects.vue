@@ -1,21 +1,46 @@
 <template>
-    <div class="containerPageProjets">
-        <div v-for="categorie in categorieProjets" :key="categorie.id">
-            <h2 class="titreCategorie">{{ categorie.nomCategorie }}</h2>
-            <div class="containerProjet">
-                <div v-for="projet in projets.filter(item => item.categorieProjet === categorie.nomCategorie)" :key="projet.id">
-                    <div class="projet">
-                        <h3 class="titreProjets">{{ projet.nomProjet }}</h3>
-                        <div class="displayProjet">
-                            <v-carousel>
-                                <v-carousel-item v-if="projet.showVideo">
-                                    <video :src="projet.urlVideo" controls></video>
-                                </v-carousel-item>
-                                <v-carousel-item :src="projet.urlImage" contain></v-carousel-item>
-                                <v-carousel-item :src="projet.urlImage2" contain></v-carousel-item>
-                                <v-carousel-item :src="projet.urlImage3" contain></v-carousel-item>
-                                </v-carousel>
-                            <p class="description">{{ projet.texte }}</p>
+    <div>
+        <div class="containerPageProjets">
+            <div v-for="categorie in categorieProjets" :key="categorie.id">
+                <h2 class="titreCategorie">{{ categorie.nomCategorie }}</h2>
+                <div class="containerProjet">
+                    <div v-for="projet in projets.filter(item => item.categorieProjet === categorie.nomCategorie)" :key="projet.id">
+                        <div class="projet">
+                            <h3 class="titreProjets">{{ projet.nomProjet }}</h3>
+                            <div class="displayProjet">
+                                <v-carousel>
+                                    <v-carousel-item v-if="projet.showVideo">
+                                        <video :src="projet.urlVideo" controls></video>
+                                    </v-carousel-item>
+                                    <v-carousel-item :src="projet.urlImage" contain></v-carousel-item>
+                                    <v-carousel-item :src="projet.urlImage2" contain></v-carousel-item>
+                                    <v-carousel-item :src="projet.urlImage3" contain></v-carousel-item>
+                                    </v-carousel>
+                                <p class="description">{{ projet.texte }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="containerPageProjetsMobile">
+            <div v-for="categorie in categorieProjets" :key="categorie.id">
+                <h2 class="titreCategorie">{{ categorie.nomCategorie }}</h2>
+                <div class="containerProjet">
+                    <div v-for="projet in projets.filter(item => item.categorieProjet === categorie.nomCategorie)" :key="projet.id">
+                        <div class="projet">
+                            <h3 class="titreProjets">{{ projet.nomProjet }}</h3>
+                            <div class="displayProjet">
+                                <v-carousel>
+                                    <v-carousel-item v-if="projet.showVideo">
+                                        <video :src="projet.urlVideo" controls></video>
+                                    </v-carousel-item>
+                                    <v-carousel-item :src="projet.urlImage" contain></v-carousel-item>
+                                    <v-carousel-item :src="projet.urlImage2" contain></v-carousel-item>
+                                    <v-carousel-item :src="projet.urlImage3" contain></v-carousel-item>
+                                    </v-carousel>
+                                <p class="description">{{ projet.texte }}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
