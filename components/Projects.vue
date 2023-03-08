@@ -5,7 +5,7 @@
             <a class="lienTous" href="/projects/">Tous mes projets</a>
         </div>
         <div class="containerCarreProjet">
-            <div class="alignementVertical containerCarre1">
+            <div class="alignementVertical containerCarre1 " data-aos="fade-right" data-aos-duration="1000">
                 <div class="carreProjet">
                     <NuxtLink NuxtLink to="/projects/">
                         <img class="imageProjet" src="../assets/image/swoat.png" alt="">
@@ -14,7 +14,7 @@
                     <p class="titreCarre">Réseau social: S.W.O.A.T</p>
                 </div>
             </div>
-            <div class="alignementVertical containerCarre2">
+            <div class="alignementVertical containerCarre2" data-aos="fade-down" data-aos-duration="1000">
                 <div class="carreProjet">
                     <NuxtLink NuxtLink to="/projects/">
                         <img class="imageProjet" src="../assets/image/revengeway.png" alt="">
@@ -23,7 +23,7 @@
                     <p class="titreCarre">Jeu vidéo: Revenge Way</p>
                 </div>
             </div>
-            <div class="alignementVertical containerCarre3">
+            <div class="alignementVertical containerCarre3" data-aos="fade-left" data-aos-duration="1000">
                 <div class="carreProjet">
                     <NuxtLink NuxtLink to="/projects/">
                         <img class="imageProjet" src="../assets/image/ordis.jpg" alt="">
