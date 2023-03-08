@@ -645,4 +645,7 @@ table {
   table {
     width: 80%;
   }
+  .headerHP {
+    font-size: 10vw;
+  } 
 }
