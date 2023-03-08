@@ -571,6 +571,7 @@ table {
 @media (max-width: 768px) {
     .barNav {
         visibility: hidden;
+        width: 10px;
     }
     .menu__btn > span,
     .menu__btn > span::before,
@@ -613,7 +614,6 @@ table {
     justify-content: center;
     width: 70%;
     text-align: center;
-    padding: 10px;
   }
   .titreProjet {
     width: 90%;
@@ -636,6 +636,11 @@ table {
   }
   .textAbout {
     width: 80%;
+  }
+  .imageHeader {
+    width: 60vw;
+    height: 60vw;
+    border: rgb(249, 231, 132) solid 8vw;
   }
   table {
     width: 80%;

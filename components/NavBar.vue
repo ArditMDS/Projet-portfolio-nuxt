@@ -6,7 +6,7 @@
       <span></span>
     </label>
     <ul class="menu__box">
-      <li><NuxtLink class="menu__item" to="/" href="#">Accueil</NuxtLink></li>
+      <li><NuxtLink class="menu__item" to="/">Accueil</NuxtLink></li>
 			<li><NuxtLink class="menu__item" to="/about/">A propos</NuxtLink></li>
 			<li><NuxtLink class="menu__item" to="/projects/">Mes projets</NuxtLink></li>
 			<li><NuxtLink class="menu__item" to="/contact/">Me contacter</NuxtLink></li>
