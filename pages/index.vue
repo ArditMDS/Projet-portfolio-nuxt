@@ -1,7 +1,6 @@
 <template>
             <NavBar />
             <HeaderHomepage />
-        
-        <Projects />
-        <Footer />
+            <Projects />
+            <Footer />
 </template>

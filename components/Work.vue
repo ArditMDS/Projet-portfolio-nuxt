@@ -30,7 +30,11 @@
                             </template>
                             <v-card>
                                 <v-card-text>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Pendant les vacances de deux semaines, j'aime bien travailler en intérim pour me faire un peu d'argent
+                                et pouvoir me faire plaisir pendant les cours. Et surtout je trouve ça important de rester dans un
+                                rythme de travail même pendant les vacances pour ne pas perdre ma motivation à la rentrée des cours.
+                                Pendant cette mission je faisais de la mise en rayon, de la gestion de caisse et je rangeais les rayons
+                                qui étaient trop mal rangé.
                                 </v-card-text>
                                 <v-card-actions>
                                 <v-btn color="primary" block @click="dialog = false">Close Dialog</v-btn>
@@ -48,7 +52,7 @@
                 <td>
                     <div class="text-center">
                         <v-dialog
-                        v-model="dialog"
+                        v-model="dialog3"
                         width="auto"
                         >
                             <template v-slot:activator="{ props }">
@@ -61,10 +65,16 @@
                             </template>
                             <v-card>
                                 <v-card-text>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Pendant l'été j'ai travaillé quasiment non-stop. Je voulais aller en vacance dans le sud avec
+                                mes amis sans demander d'argent à mes parents. J'ai travaillé dans plusieurs endroits différents: <br>
+                                - Carrefour: rayon multimédia, puis rayon découpe fromagerie / charcuterie <br>
+                                - Kiabi: Déballage et pliage des nouvelles collections qui arrivaient. <br>
+                                - Action: Quelques semaines de mises en rayon et de gestion de caisse. <br>
+                                - Cora: Ma mission à durée quelques jours de mise en rayon le matin à 5h du matin jusqu'à midi. <br>
+
                                 </v-card-text>
                                 <v-card-actions>
-                                <v-btn color="primary" block @click="dialog = false">Close Dialog</v-btn>
+                                <v-btn color="primary" block @click="dialog3 = false">Close Dialog</v-btn>
                                 </v-card-actions>
                             </v-card>
                         </v-dialog>
@@ -79,7 +89,7 @@
                 <td>
                     <div class="text-center">
                         <v-dialog
-                        v-model="dialog"
+                        v-model="dialog2"
                         width="auto"
                         >
                             <template v-slot:activator="{ props }">
@@ -92,10 +102,13 @@
                             </template>
                             <v-card>
                                 <v-card-text>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Dans le cadre de mon BTS, j'ai fais un stage à Darty en tant que vendeur apprentis.
+                                    Je conseillais les gens sur des produits tech et multimédia. J'ai adoré ce stage,
+                                    J'allais tous les jours au travail avec le sourire car c'était ma première expérience 
+                                    professionelle et que les gens avec qui je travaillais était vraiment bienveillant.
                                 </v-card-text>
                                 <v-card-actions>
-                                <v-btn color="primary" block @click="dialog = false">Close Dialog</v-btn>
+                                <v-btn color="primary" block @click="dialog2 = false">Close Dialog</v-btn>
                                 </v-card-actions>
                             </v-card>
                         </v-dialog>
@@ -112,7 +125,15 @@ export default {
     data() {
         return {
             dialog: false,
+            dialog2: false,
+            dialog3: false,
         }
     }
 }
 </script>
+
+<style>
+.bg-primary {
+    background: red!important;
+}
+</style>
