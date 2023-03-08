@@ -578,6 +578,7 @@ table {
     .barNav {
         visibility: hidden;
         width: 10px;
+        margin: 0;
     }
     .menu__btn > span,
     .menu__btn > span::before,
@@ -662,6 +663,7 @@ table {
   }
   .containerContact {
     flex-direction: column;
+    gap: 50px;
   }
   .texteContact {
      width: 80%;
@@ -701,6 +703,7 @@ table {
   .containerPageProjetsMobile {
     display: flex;
     flex-direction: column;
+    padding: 3%;
   }
   .v-window {
     height: 100% !important;

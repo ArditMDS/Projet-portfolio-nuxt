@@ -3,7 +3,7 @@
         <div class="containerPageProjets">
             <div v-for="categorie in categorieProjets" :key="categorie.id">
                 <h2 class="titreCategorie">{{ categorie.nomCategorie }}</h2>
-                <div class="containerProjet">
+                <div class="containerProjet" data-aos="zoom-in-down">
                     <div v-for="projet in projets.filter(item => item.categorieProjet === categorie.nomCategorie)" :key="projet.id">
                         <div class="projet">
                             <h3 class="titreProjets">{{ projet.nomProjet }}</h3>
@@ -26,7 +26,7 @@
         <div class="containerPageProjetsMobile">
             <div v-for="categorie in categorieProjets" :key="categorie.id">
                 <h2 class="titreCategorie">{{ categorie.nomCategorie }}</h2>
-                <div class="containerProjet">
+                <div class="containerProjet" data-aos="zoom-in-down">
                     <div v-for="projet in projets.filter(item => item.categorieProjet === categorie.nomCategorie)" :key="projet.id">
                         <div class="projet">
                             <h3 class="titreProjets">{{ projet.nomProjet }}</h3>
