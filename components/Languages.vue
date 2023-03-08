@@ -1,7 +1,7 @@
 <template>
     <div class="headerAbout">
         <div class="imageAbout">
-            <img src="../assets/image/moiPetit.jpg" alt="">
+            <img class="imageAboutFit" src="../public/image/moiPetit.png" alt="">
         </div>
         <div class="textAbout">
             <h1 class="textAboutTitre">Qui suis-je ?</h1>

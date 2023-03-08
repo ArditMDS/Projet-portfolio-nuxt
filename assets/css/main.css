@@ -315,7 +315,10 @@ hr {
 .imageAbout {
     display: flex;
     justify-content: center;
-    width: 30%;
+    width: 45%;
+}
+.imageAboutFit {
+    object-fit: contain;
 }
 .textAbout {
     width: 30%;

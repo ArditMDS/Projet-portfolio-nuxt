@@ -1,7 +1,7 @@
 <template>
     <div class="containerHeaderHomepage">
         <div class="containerDroitHP">
-            <img class="imageHeader" src="../assets/image/moiPetit.jpg" alt="">
+            <img class="imageHeader" src="../public/image/moiPetit.png" alt="">
             <span class="popUpImage">Bac +3</span>
         </div>
         <div class="containerGaucheHeaderHP">
