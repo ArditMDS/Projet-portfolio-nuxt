@@ -648,4 +648,13 @@ table {
   .headerHP {
     font-size: 10vw;
   } 
+  .displayProjet {
+    flex-direction: column;
+  }
+  .v-window{
+    height: 100% !important;
+  }
+  .description {
+    width: 100%;
+  }
 }
