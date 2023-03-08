@@ -2,7 +2,7 @@
     <div class="pageContact">
         <div class="containerContact">
             <img class="image" src="../public/image/lac.jpg" alt="">
-            <p>Si vous souhaitez recourir à mes services ou me contacter <br> pour une offre d'alternance, voici toutes mes coordonnées!</p>
+            <p class="texteContact">Si vous souhaitez recourir à mes services ou me contacter <br> pour une offre d'alternance, voici toutes mes coordonnées!</p>
             <div class="containerInfo">
                 <div class="dF">
                     <div class="svg svgTel"></div>

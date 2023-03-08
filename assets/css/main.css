@@ -643,7 +643,7 @@ table {
     border: rgb(249, 231, 132) solid 8vw;
   }
   table {
-    width: 80%;
+    width: 80% !important;
   }
   .headerHP {
     font-size: 10vw;
@@ -656,5 +656,40 @@ table {
   }
   .description {
     width: 100%;
+  }
+  .containerContact {
+    flex-direction: column;
+  }
+  .texteContact {
+     width: 80%;
+  }
+  .image {
+    width: 70%;
+  }
+  th {
+    display: none;
+  }
+  
+  /* Display each row as a block */
+  tr {
+    display: block;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+  
+  /* Display the row content as a table cell */
+  td {
+    display: block;
+    text-align: left;
+    border: none;
+  }
+  
+  /* Add a heading to each row */
+  td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
   }
 }
