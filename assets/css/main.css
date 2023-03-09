@@ -101,8 +101,8 @@ nav {
     padding: 20px;
     font-size: larger;
     border-radius: 10px;
-    top: 60%;
-    left: -8vw;
+    top: 50%;
+    left: -2vw;
     position: absolute;
 }
 .containerProjets {
@@ -589,6 +589,10 @@ table {
     flex-direction: column;
     align-items: center;
   }
+  .popUpImage {
+    top: 60%;
+    left: -8vw;
+}
   .containerGaucheHeaderHP {
     width: 90%;
     display: flex;
