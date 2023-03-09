@@ -54,7 +54,7 @@
                     <span class="noteOui"></span>
                 </div>
                 <div><div class="dFlexSpaceB">
-                    <li>Allemands</li>
+                    <li>Allemand</li>
                     <p>Débutant</p>
                 </div>
                     <span class="noteOui"></span>

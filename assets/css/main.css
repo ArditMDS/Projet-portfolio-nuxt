@@ -575,14 +575,10 @@ table {
     background-color: #f9e784;
   }
   
-  body {
-    overflow-x: hidden !important;
-  }
+
 @media (max-width: 768px) {
     .barNav {
-        visibility: hidden;
-        width: 10px;
-        margin: 0;
+        display: none;
     }
     .menu__btn > span,
     .menu__btn > span::before,
@@ -715,4 +711,10 @@ table {
   .projet {
     padding: 10px;
   }
+}
+
+
+
+#__nuxt {
+  overflow-x: hidden !important;
 }
