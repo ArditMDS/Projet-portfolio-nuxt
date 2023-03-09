@@ -23,7 +23,7 @@
                     <p class="titreCarre">Jeu vidéo: Revenge Way</p>
                 </div>
             </div>
-            <div class="alignementVertical containerCarre3" data-aos="fade-left" data-aos-duration="1000">
+            <div class="alignementVertical containerCarre3" data-aos="fade-right" data-aos-duration="1000">
                 <div class="carreProjet">
                     <NuxtLink NuxtLink to="/projects/">
                         <img class="imageProjet" src="../assets/image/ordis.jpg" alt="">

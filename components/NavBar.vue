@@ -10,6 +10,7 @@
 			<li><NuxtLink class="menu__item" to="/about/">A propos</NuxtLink></li>
 			<li><NuxtLink class="menu__item" to="/projects/">Mes projets</NuxtLink></li>
 			<li><NuxtLink class="menu__item" to="/contact/">Me contacter</NuxtLink></li>
+      <li><a class="menu__item" href="../image/Arditmataj.pdf" target="_blank">Mon CV</a></li>
     </ul>
   </div>
    <nav class="flex justify-around pt-2 barNav">
@@ -23,6 +24,7 @@
             <NuxtLink  class="pr-10 NuxtLink" to="/projects/">
                 <p v-bind:class="{ active: isActive('/projects/') }" class="pointActive">Mes projets</p>
             </NuxtLink>
+            <a class="pr-10 NuxtLink " href="../image/Arditmataj.pdf" target="_blank"><p class="pointActive">Mon CV</p></a>
         </div>
         <NuxtLink class="partieDroiteNav NuxtLink" to="/contact/">
             <button class="boutonCta pointActive">Me contacter</button>

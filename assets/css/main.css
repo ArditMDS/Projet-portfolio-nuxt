@@ -574,6 +574,10 @@ table {
   .menu__item:hover {
     background-color: #f9e784;
   }
+  
+  body {
+    overflow-x: hidden !important;
+  }
 @media (max-width: 768px) {
     .barNav {
         visibility: hidden;
