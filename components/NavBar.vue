@@ -27,7 +27,7 @@
             <a class="pr-10 NuxtLink " href="../image/Arditmataj.pdf" target="_blank"><p class="pointActive">Mon CV</p></a>
         </div>
         <NuxtLink class="partieDroiteNav NuxtLink" to="/contact/">
-            <button class="boutonCta pointActive">Me contacter</button>
+            <div class="boutonCta">Me contacter</div>
         </NuxtLink>
     </nav>
     

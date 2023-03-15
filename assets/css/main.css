@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
 
 nav {
-    margin-bottom: 90px;
+    margin: 0 30px 90px 0px;
 }
 .carre {
     height: 100px;
@@ -44,6 +44,8 @@ nav {
     border-radius: 50%;
 }
 .boutonCta {
+    text-align: center;
+    width: 300px;
     background-color: rgb(249, 231, 132);
     color: rgb(100, 69, 54);
     padding: 10px 20px 10px 20px;
@@ -56,7 +58,7 @@ nav {
     opacity: 1;
 }
 .pointActive {
-    position: absolute;
+    position: relative;
     transition: ease-out 0.3s;
     padding: 10px 0 10px 10px;
 }
@@ -69,7 +71,19 @@ nav {
 }
 .partieGaucheNav {
     display: flex;
-    gap: 100%;
+    width: 100%;
+    justify-content: center;
+    gap: 10%;
+}
+.partieDroiteNav {
+    display: flex;
+    align-items: center;
+}
+.descHomepage {
+    font-size: 100%;
+}
+.divBac {
+    position: relative;
 }
 .containerHeaderHomepage {
     display: flex;
@@ -84,8 +98,8 @@ nav {
 }
 .imageHeader {
     border-radius: 100vh;
-    height: 350px;
-    width: 350px;
+    height: 23vw;
+    width: 23vw;
     object-fit: cover;
     border: rgb(249, 231, 132) solid 50px;
 }
@@ -98,8 +112,8 @@ nav {
 .popUpImage {
     background-color: black;
     color: white;
-    padding: 20px;
-    font-size: larger;
+    padding: 5%;
+    font-size: 20px;
     border-radius: 10px;
     top: 50%;
     left: -2vw;
@@ -592,6 +606,7 @@ table {
   .popUpImage {
     top: 60%;
     left: -8vw;
+      font-size: 15px;
 }
   .containerGaucheHeaderHP {
     width: 90%;
